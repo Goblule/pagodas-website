@@ -1,8 +1,10 @@
 streamlit
 requests
-
+streamlit_option_menu
 
 # Protein 3d viz
 stmol==0.0.9
 py3Dmol
 biotite
+pandas
+streamlit_extras

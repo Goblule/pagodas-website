@@ -1,4 +1,5 @@
-.python-version/
+.python-version
+__pycache__/
 *.pdb
 *.png
-__pycache__/
+*.txt
