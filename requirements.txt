@@ -1,0 +1,8 @@
+streamlit
+requests
+
+
+# Protein 3d viz
+stmol==0.0.9
+py3Dmol
+biotite
