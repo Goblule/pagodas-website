@@ -50,6 +50,7 @@ def page_set_up():
 
             This interface uses the following API:
 
+            - [*Pagodas API*](https://pagodas-74s6w3h4cq-od.a.run.app/) The Pagodas API predicts the Gene Ontology (GO) terms based on the protein sequence of amino acids.
             - [*ESMFold*](https://esmatlas.com/about). The ESMFold API is an end-to-end single sequence protein structure predictor based on the ESM-2 language model.
             - [*QuickGO API*](https://www.ebi.ac.uk/QuickGO/api/). The QuickGO REST API provides access to key biological data from QuickGO and GOA.
         """
