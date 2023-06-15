@@ -8,17 +8,9 @@ import biotite.structure.io as bsio
 import pandas as pd
 from streamlit_extras.switch_page_button import switch_page
 
-
-
-
-
-go_id='3A1904659'
-
 def update_table():
 
     st.subheader('Predicted GO Terms')
-    st.subheader('Test')
-
 
     txt = open("seq.txt", "r").read()
 
@@ -29,23 +21,13 @@ def update_table():
     df['weighted_probability'] = df['weighted_probability'].map(lambda x : round(x,2))
     df = df.drop(columns=['probability']).rename(columns={'function_name' : 'Function Name','weighted_probability' : 'Weighted Probability'})
 
+    base_url = 'https://www.ebi.ac.uk/QuickGO/services/ontology/go/terms/{ids}/chart?ids=GO%'
+    apps = [base_url + go_id for go_id in list(df.index)]
 
-    apps = [ 'https://www.ebi.ac.uk/QuickGO/services/ontology/go/terms/{ids}/chart?ids=GO%'+go_id,
-            'https://www.ebi.ac.uk/QuickGO/services/ontology/go/terms/{ids}/chart?ids=GO%'+go_id,
-            'https://www.ebi.ac.uk/QuickGO/services/ontology/go/terms/{ids}/chart?ids=GO%'+go_id,
-            'https://www.ebi.ac.uk/QuickGO/services/ontology/go/terms/{ids}/chart?ids=GO%'+go_id
-    ]
-
-    # dicto = {'Name' : ['<name>','<name>','<name>','<name>'],
-    #         'Weighted Probability' : ['<weighted_probability>','<weighted_probability>','<weighted_probability>','<weighted_probability>'],
-    #         'Graph' : apps,}
-
-    # data_df = pd.DataFrame(dicto,index=[f'GO:{go_id}',f'GO:{go_id}',f'GO:{go_id}',f'GO:{go_id}'])
-    data_df = df
     df['Graph'] = apps
 
     st.data_editor(
-        data_df,
+        df,
         column_config={
             'Graph': st.column_config.ImageColumn(
                 "Graph Preview Image", help="Streamlit app preview screenshots"
