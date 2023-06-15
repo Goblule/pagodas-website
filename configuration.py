@@ -50,13 +50,13 @@ def page_set_up():
 
             Authors
 
-            ✍️ [Julien Tetar](https://github.com/Goblule)
+            🧙‍♂️ [Julien Tetar](https://github.com/Goblule)
 
 
-            ✍️ [Erika Fallacara](https://github.com/erikafallacara)
+            🪄 [Erika Fallacara](https://github.com/erikafallacara)
 
 
-            ✍️ [Victor M'Baye](https://github.com/VeMBe06)
+            👨‍🔬 [Victor M'Baye](https://github.com/VeMBe06)
 
             This interface uses the following APIs.
 
