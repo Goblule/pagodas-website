@@ -17,6 +17,7 @@ go_id='3A1904659'
 def update_table():
 
     st.subheader('Predicted GO Terms')
+    st.subheader('Test')
 
 
     txt = open("seq.txt", "r").read()
