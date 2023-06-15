@@ -20,7 +20,7 @@ install_requirements:
 # ----------------------------------
 
 streamlit:
-	-@streamlit run app.py
+	-@streamlit run Home.py
 
 
 # ----------------------------------
