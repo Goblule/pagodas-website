@@ -54,14 +54,7 @@ def update_table():
     df['weighted_probability'] = df['weighted_probability'].map(lambda x : round(x,2))
     df = df.drop(columns=['probability']).rename(columns={'function_name' : 'Function Name','weighted_probability' : 'Weighted Probability'})
 
-
-    # apps = [ 'https://www.ebi.ac.uk/QuickGO/services/ontology/go/terms/{ids}/chart?ids=GO%'+go_id,
-    #         'https://www.ebi.ac.uk/QuickGO/services/ontology/go/terms/{ids}/chart?ids=GO%'+go_id,
-    #         'https://www.ebi.ac.uk/QuickGO/services/ontology/go/terms/{ids}/chart?ids=GO%'+go_id,
-    #         'https://www.ebi.ac.uk/QuickGO/services/ontology/go/terms/{ids}/chart?ids=GO%'+go_id
-    # ]
-
-    base_url = 'https://www.ebi.ac.uk/QuickGO/services/ontology/go/terms/{ids}/chart?ids=GO%'
+    base_url = 'https://www.ebi.ac.uk/QuickGO/services/ontology/go/terms/{ids}/chart?ids=GO%3A'
     apps = [base_url + go_id[3:] for go_id in list(df.index)]
 
     df['Graph'] = apps
