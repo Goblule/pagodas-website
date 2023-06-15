@@ -37,7 +37,11 @@ def update_pdb(sequence=txt):
 
     # Display protein structure
     st.subheader('Visualization of Predicted Protein Structure')
-    st.subheader('Test')
     render_mol(pdb_string)
 
 update_pdb(txt)
+
+button_go_terms = t.button(':green[Predict Functionality]')
+
+if button_go_terms:
+    switch_page("Protein_Structure")

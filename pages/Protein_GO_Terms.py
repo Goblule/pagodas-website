@@ -55,17 +55,15 @@ def update_table():
     df = df.drop(columns=['probability']).rename(columns={'function_name' : 'Function Name','weighted_probability' : 'Weighted Probability'})
 
 
-    apps = [ 'https://www.ebi.ac.uk/QuickGO/services/ontology/go/terms/{ids}/chart?ids=GO%'+go_id,
-            'https://www.ebi.ac.uk/QuickGO/services/ontology/go/terms/{ids}/chart?ids=GO%'+go_id,
-            'https://www.ebi.ac.uk/QuickGO/services/ontology/go/terms/{ids}/chart?ids=GO%'+go_id,
-            'https://www.ebi.ac.uk/QuickGO/services/ontology/go/terms/{ids}/chart?ids=GO%'+go_id
-    ]
+    # apps = [ 'https://www.ebi.ac.uk/QuickGO/services/ontology/go/terms/{ids}/chart?ids=GO%'+go_id,
+    #         'https://www.ebi.ac.uk/QuickGO/services/ontology/go/terms/{ids}/chart?ids=GO%'+go_id,
+    #         'https://www.ebi.ac.uk/QuickGO/services/ontology/go/terms/{ids}/chart?ids=GO%'+go_id,
+    #         'https://www.ebi.ac.uk/QuickGO/services/ontology/go/terms/{ids}/chart?ids=GO%'+go_id
+    # ]
 
-    # dicto = {'Name' : ['<name>','<name>','<name>','<name>'],
-    #         'Weighted Probability' : ['<weighted_probability>','<weighted_probability>','<weighted_probability>','<weighted_probability>'],
-    #         'Graph' : apps,}
+    base_url = 'https://www.ebi.ac.uk/QuickGO/services/ontology/go/terms/{ids}/chart?ids=GO%'
+    apps = [base_url + go_id[3:] for go_id in list(df.index)]
 
-    # data_df = pd.DataFrame(dicto,index=[f'GO:{go_id}',f'GO:{go_id}',f'GO:{go_id}',f'GO:{go_id}'])
     df['Graph'] = apps
     data_df = df
 
@@ -79,6 +77,5 @@ def update_table():
         hide_index=False,
         width=800
     )
-
 
 update_table()
