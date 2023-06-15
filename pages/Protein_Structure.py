@@ -58,7 +58,7 @@ data_df = df[df['Weighted Probability'] > 0.05].sample(10)
 data_df.to_csv('go_terms.csv',index=False)
 
 
-button_go_terms = st.button(':green[Predict Functionalities]')
+button_go_terms = st.button(':green[Check out functionalities]')
 
 if button_go_terms:
     switch_page("Protein_Functionalities")
