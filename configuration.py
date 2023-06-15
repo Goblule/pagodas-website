@@ -46,7 +46,12 @@ def page_set_up():
         st.sidebar.title("About")
         st.sidebar.info(
             """
-            Source code: <https://github.com/Goblule/pagodas-website>
+            [Source code](https://github.com/Goblule/pagodas-website)
+
+            ✍️ Authors:
+            - [Julien Tetar](https://github.com/Goblule)
+            - [Erika Fallacara](https://github.com/erikafallacara)
+            - [Victor M'Baye](https://github.com/VeMBe06)
 
             This interface uses the following APIs:
 
