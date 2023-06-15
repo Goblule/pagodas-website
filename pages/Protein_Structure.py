@@ -35,7 +35,7 @@ def update_pdb(sequence=txt):
         f.write(pdb_string)
 
     # Display protein structure
-    st.subheader('Visualization of Predicted Protein Structure')
+    st.subheader('💫 Visualization of Predicted Protein Structure')
     render_mol(pdb_string)
 
 update_pdb(txt)

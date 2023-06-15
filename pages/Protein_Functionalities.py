@@ -29,7 +29,7 @@ data_df = df[df['Weighted Probability'] > 0.05].sample(10)
 
 def update_table():
 
-    st.subheader('Predicted Protein Functionalities')
+    st.subheader('✅ Predicted Protein Functionalities')
 
     #data_df = pd.read_csv('go_terms.csv')
 
