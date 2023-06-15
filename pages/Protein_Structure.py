@@ -43,4 +43,4 @@ update_pdb(txt)
 button_go_terms = st.button(':green[Check out functionalities]')
 
 if button_go_terms:
-    switch_page("🪄Protein_Functionalities")
+    switch_page("Protein_Functionalities")
