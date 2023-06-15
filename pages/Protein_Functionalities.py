@@ -9,6 +9,7 @@ import pandas as pd
 from streamlit_extras.switch_page_button import switch_page
 import pandas as pd
 
+txt = open("seq.txt", "r").read()
 url='https://pagodas-74s6w3h4cq-od.a.run.app/predict?protein_sequence='+txt
 response = requests.get(url)
 dicto = response.json()
