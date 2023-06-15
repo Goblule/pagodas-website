@@ -66,8 +66,8 @@ def update_table():
     #         'Graph' : apps,}
 
     # data_df = pd.DataFrame(dicto,index=[f'GO:{go_id}',f'GO:{go_id}',f'GO:{go_id}',f'GO:{go_id}'])
-    data_df = df
     df['Graph'] = apps
+    data_df = df
 
     st.data_editor(
         data_df,
