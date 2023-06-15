@@ -55,7 +55,7 @@ apps = [base_url + go_id[3:] for go_id in list(df.index)]
 df['Graph'] = apps
 
 data_df = df[df['Weighted Probability'] > 0.05].sample(10)
-data_df.to_csv('go_terms.csv',index=False)
+# data_df.to_csv('go_terms.csv',index=False)
 
 
 button_go_terms = st.button(':green[Check out functionalities]')

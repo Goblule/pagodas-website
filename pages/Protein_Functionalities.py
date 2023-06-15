@@ -13,7 +13,7 @@ def update_table():
 
     st.subheader('Predicted Protein Functionalities')
 
-    data_df = pd.read_csv('go_terms.csv')
+    #data_df = pd.read_csv('go_terms.csv')
 
     st.data_editor(
         data_df,
