@@ -9,6 +9,9 @@ import pandas as pd
 from streamlit_extras.switch_page_button import switch_page
 import pandas as pd
 
+st.subheader('⌛ Predicted Protein Functionalities')
+
+
 txt = open("seq.txt", "r").read()
 url='https://pagodas-74s6w3h4cq-od.a.run.app/predict?protein_sequence='+txt
 response = requests.get(url)
@@ -28,8 +31,6 @@ data_df = df[df['Weighted Probability'] > 0.05].sample(10)
 # data_df.to_csv('go_terms.csv',index=False)
 
 def update_table():
-
-    st.subheader('✅ Predicted Protein Functionalities')
 
     #data_df = pd.read_csv('go_terms.csv')
 
