@@ -8,10 +8,6 @@ import biotite.structure.io as bsio
 import pandas as pd
 from streamlit_extras.switch_page_button import switch_page
 
-
-
-
-
 go_id='3A1904659'
 
 def update_table():
