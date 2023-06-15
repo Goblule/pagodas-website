@@ -19,7 +19,7 @@ def render_mol(pdb):
     pdbview.zoomTo()
     pdbview.zoom(1.5, 800)
     pdbview.spin(True)
-    showmol(pdbview, height = 100,width=800)
+    showmol(pdbview, height =500,width=800)
 
 
 # ESMfold
