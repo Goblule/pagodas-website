@@ -61,4 +61,4 @@ data_df.to_csv('go_terms.csv',index=False)
 button_go_terms = st.button(':green[Predict Functionalities]')
 
 if button_go_terms:
-    switch_page("Predicted_Protein_Functionalities")
+    switch_page("Protein_Functionalities")

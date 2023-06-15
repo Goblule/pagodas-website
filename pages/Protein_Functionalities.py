@@ -11,7 +11,7 @@ import pandas as pd
 
 def update_table():
 
-    st.subheader('Predicted GO Terms')
+    st.subheader('Predicted Protein Functionalities')
 
     data_df = pd.read_csv('go_terms.csv')
 
