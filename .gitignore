@@ -3,4 +3,5 @@ __pycache__/
 *.pdb
 *.png
 *.txt
+*.csv
 *.ipynb

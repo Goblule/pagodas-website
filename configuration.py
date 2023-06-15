@@ -29,10 +29,10 @@ def page_set_up():
 
     params = st.experimental_get_query_params()
 
-    if "page" in params:
-        default_index = int(titles_lower.index(params["page"][0].lower()))
-    else:
-        default_index = 0
+    # if "page" in params:
+    #     default_index = int(titles_lower.index(params["page"][0].lower()))
+    # else:
+    #     default_index = 0
 
     with st.sidebar:
         # selected = option_menu(
@@ -46,13 +46,19 @@ def page_set_up():
         st.sidebar.title("About")
         st.sidebar.info(
             """
-            [Source code](https://github.com/Goblule/pagodas-website)
+            Source code: <https://github.com/Goblule/pagodas-website>
+
+            Authors
 
             ✍️ [Julien Tetar](https://github.com/Goblule)
+
+
             ✍️ [Erika Fallacara](https://github.com/erikafallacara)
+
+
             ✍️ [Victor M'Baye](https://github.com/VeMBe06)
 
-            This interface uses the following APIs:
+            This interface uses the following APIs.
 
             - [*Pagodas API*](https://pagodas-74s6w3h4cq-od.a.run.app/) The Pagodas API predicts the Gene Ontology (GO) terms based on the protein sequence of amino acids.
             - [*ESMFold API*](https://esmatlas.com/about). The ESMFold API is an end-to-end single sequence protein structure predictor based on the ESM-2 language model.

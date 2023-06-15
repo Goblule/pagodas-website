@@ -41,7 +41,7 @@ def update_pdb(sequence=txt):
 
 update_pdb(txt)
 
-button_go_terms = st.button(':green[Predict Functionality]')
+button_go_terms = st.button(':green[Predict Functionalities]')
 
 if button_go_terms:
-    switch_page("Protein_GO_Terms")
+    switch_page("Predicted_Protein_Functionalities")
