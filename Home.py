@@ -13,7 +13,7 @@ configuration.page_set_up()
 
 ######################## LAYOUT ##########################
 
-st.markdown('''# Pagodas''')
+st.markdown('''# 🏯 Pagodas''')
 st.markdown('''## Protein Annotation _by_ Gene Ontology _through_ Deep _learning_ Automated System''')
 
 # Protein sequence input
