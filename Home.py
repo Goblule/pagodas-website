@@ -30,4 +30,4 @@ button_predict = st.button(':violet[Predict]')
 if button_predict:
     with open('seq.txt', 'w') as f:
         f.write(txt)
-    switch_page("Protein_Structure")
+    switch_page("🧵Protein_Structure")
