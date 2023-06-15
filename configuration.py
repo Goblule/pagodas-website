@@ -48,10 +48,9 @@ def page_set_up():
             """
             [Source code](https://github.com/Goblule/pagodas-website)
 
-            ✍️ Authors:
-            - [Julien Tetar](https://github.com/Goblule)
-            - [Erika Fallacara](https://github.com/erikafallacara)
-            - [Victor M'Baye](https://github.com/VeMBe06)
+            ✍️ [Julien Tetar](https://github.com/Goblule)
+            ✍️ [Erika Fallacara](https://github.com/erikafallacara)
+            ✍️ [Victor M'Baye](https://github.com/VeMBe06)
 
             This interface uses the following APIs:
 
