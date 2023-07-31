@@ -8,3 +8,5 @@ py3Dmol
 biotite
 pandas
 streamlit_extras
+
+ipython_genutils
